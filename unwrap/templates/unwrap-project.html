@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <h1>El Proyecto Unwrap</h1>
+        <img src="/static/pic1.jpg" class="d-block w-100" alt="...">
+        <h1>
+            <p>¡Crecimos con la idea equivocada del reciclaje!</p>
+        </h1>
+        <h3><p>Nuestra salud y nuestra bahía están en peligro. El plástico es tóxico.</p></h3>
+
+        <p>Cada pieza de plástico jamás producida sigue aquí, en los vertederos, en el océano, pero también en el aire que respiramos, el agua que bebemos, en los animales y plantas que comemos y en el suelo sobre el que caminamos.</p>
+
+        <div>
+            <img width="100%" src="{{ url_for('static', filename='pic8.JPG') }}" />
+        </div>
+        <div>
+            <h1>
+                <p>¡Así que actuemos y reduzcamos nuestro consumo de plástico!</p>
+            </h1>
+        </div>
+        <p>Nuestro objetivo es facilitar la transición a una vida libre de plástico en el gran área de Los Ángeles. Nuestra solución es ofrecer alternativas a nuestra comunidad y asociarnos con marcas que quieran y estén listas para ofrecer alternativas.</p>
+        <p>Queremos mantenerlo **fácil, limpio y accesible**. Nuestro primer paso es Refill@home. Una "caja" personalizable de productos locales en contenedores locales que podemos rellenar. Nuestro objetivo final es abrir un lugar físico en Los Ángeles para clientes preocupados por el plástico.</p>
+
+        <h1>
+            <p>Nuestros Socios</p>
+        </h1>
+        <h5>
+            <p>Hemos hablado con muchos proveedores y hemos seleccionado a los que tienen tanto excelentes productos como la voluntad de vender a granel para reducir el embalaje.</p>
+        </h5>
+        <h4><b>Nuestros socios se seleccionan a través de 4 criterios principales:</b></h4>
+
+        <ul style="list-style-type:none;">
+            <li>Materiales/ingredientes sostenibles</li>
+            <li>Gran calidad</li>
+            <li>Sin embalaje (suministrado a granel) o al menos sin plástico</li>
+            <li>Local primero</li>
+        </ul>
+
+    </div>
+</div>
+
+{% endblock content %}
