@@ -1,131 +1,184 @@
+/* General */
 body {
-  background: #fafafa;
-  margin-top: 5rem;
-  color: #00264d; 
+  background: #fafafa; /* Fondo blanco */
+  margin-top: 2rem; /* Reducir el margen superior */
+  color: #000; /* Negro para el texto principal */
   text-align: center;
-  font-family: 'Manjari', sans-serif;
-
+  font-family: 'Audiowide', sans-serif; /* Tipografía deportiva */
 }
 
-h1, h2, h3, h4
-{
-  width: 100%;
-
+/* Sección del Carro y Título */
+#car-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; /* Reducir el margen superior */
 }
 
-#navbarToggle
-{
-  margin-top:20px;
+#car-section img {
+  width: 180px; /* Tamaño del carro */
+  height: auto;
+  margin-right: 15px; /* Espaciado entre carro y texto */
 }
 
-#noOfItems
-{
-  margin-left: -20px
+#car-section h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem; /* Tamaño del texto */
+  color: #ff0000; /* Rojo brillante */
+  margin: 0;
 }
 
-.card
-{
-  width: 25rem; 
-  height: 40rem;
-  margin-bottom: 20px;
+/* Barra de Navegación */
+.site-header {
+  background-color: #000; /* Fondo negro */
+  height: 60px; /* Reducir la altura */
+  display: flex;
+  align-items: center;
 }
 
-.carousel-inner
-{
-  height: 500px
+.navbar-brand {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.form
-{
-  margin: auto; 
-  width: 60%; 
-  padding: 50px
+#logo {
+  height: 55px; /* Ajustar tamaño del logo */
+  display: block;
+  margin-top: -5px; /* Mover logo hacia arriba */
 }
 
-main {
-
-  color: #00264d; 
-  text-align: center;
-  font-family: 'Manjari', sans-serif;
-}
-
-header
-{
-  height: 90px;  
-  border-bottom: 1px solid lightgrey; 
-}
-
-
-
-#logo
-{
-  height:50px;
-}
-
-#navbarToggle
-{
-  font-family: 'Manjari', sans-serif;
-  font-size:   18px;
-}
-
-
-
-.glyphicon
-{
-  color: #00264d; 
-  height: 10px;
-  font-size: 20px;
-}
-
-.glyphicon:hover
-{
-  color: #43b9f0; 
-}
-
-
+/* Navegación */
 .site-header .navbar-nav .nav-link {
-  color: #00264d;
+  color: #fff; /* Blanco */
+  font-size: 1.4rem; /* Aumentar el tamaño del texto */
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #43b9f0;
+  color: #ff0000; /* Rojo al pasar el cursor */
 }
 
 .site-header .navbar-nav .nav-link.active {
   font-weight: 500;
   text-decoration: underline;
+  color: #ff0000; /* Rojo para el enlace activo */
 }
 
+/* Íconos del Navbar */
+.navbar-nav .glyphicon {
+  color: #fff; /* Blanco por defecto */
+  font-size: 1.5rem; /* Aumentar tamaño del ícono */
+  transition: color 0.3s ease; /* Suavizar la transición */
+}
+
+.navbar-nav .glyphicon:hover {
+  color: #ff0000; /* Rojo al pasar el cursor */
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #ff0000; /* Rojo brillante */
+  color: #fff; /* Blanco */
+  border: 2px solid #000; /* Borde negro */
+}
+
+.btn-primary:hover {
+  background-color: #000; /* Negro */
+  color: #fff; /* Blanco */
+  border: 2px solid #ff0000; /* Borde rojo */
+}
+
+/* Tarjetas de Productos */
+.card {
+  width: 25rem; 
+  height: 40rem;
+  margin-bottom: 20px;
+  background-color: #fff; /* Blanco */
+  border: 1px solid #000; /* Negro */
+  color: #000; /* Negro para el texto */
+}
+
+/* Carrusel */
+.carousel-inner {
+  height: 500px;
+}
+
+/* Formularios */
+.form {
+  margin: auto; 
+  width: 60%; 
+  padding: 50px;
+  background-color: #fff; /* Blanco */
+  border: 1px solid #000; /* Negro */
+  border-radius: 5px;
+}
+
+/* Secciones destacadas */
+.jumbotron {
+  background-color: #fff; /* Blanco */
+  border: 2px solid #ff0000; /* Borde rojo */
+  color: #000; /* Texto negro */
+  padding: 20px;
+}
+
+/* Contenido */
 .content-section {
-  background: #ffffff;
+  background: #fff; /* Blanco */
   padding: 10px 20px;
-  border: 1px solid #dddddd;
+  border: 1px solid #000; /* Negro */
   border-radius: 3px;
   margin-bottom: 20px;
+  color: #000; /* Texto negro */
 }
 
-
-.account-heading {
-  font-size: 2.5rem;
+/* Enlaces */
+a {
+  color: #ff0000; /* Rojo brillante */
+  text-decoration: none;
 }
 
-
-.nav-item
-{
-  margin-right: 20px
+a:hover {
+  color: #000; /* Negro al pasar el cursor */
+  text-decoration: underline;
 }
 
+/* Footer */
 footer {
   left: 0;
   bottom: 0;
   text-align: center;
-  background-color: #f2f2f2;
-  font-family: 'Manjari', sans-serif;
+  background-color: #000; /* Negro */
+  color: #fff; /* Blanco */
+  font-family: 'Audiowide', sans-serif;
   margin-top: 40px;
-  color: #00264d
+  padding: 20px;
 }
 
-.nav-link
-{
+footer a {
+  color: #ff0000; /* Rojo brillante */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff; /* Blanco al pasar el cursor */
+}
+
+/* Títulos de Cuentas */
+.account-heading {
+  font-size: 2.5rem;
+  color: #000; /* Negro */
+}
+
+/* Elementos adicionales */
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
   display: inline;
+}
+
+/* Contador de Ítems */
+#noOfItems {
+  margin-left: -20px;
+  color: #000; /* Negro */
 }
