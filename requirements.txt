@@ -6,3 +6,4 @@ flask_wtf
 wtforms
 sqlalchemy
 email_validator
+Gunicorn
